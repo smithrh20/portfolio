@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a href="https://github.com/smithrh20"><img src="{% static 'images/github-icon.png'%}" alt="github" width="35px"></a>
+        <a href=""><img src="{% static 'images/Document-icon.png'%}" alt="resume" width="40px"></a>
+        <a href="#form"><img src="{% static 'images/email-icon.png'%}" alt="contactForm" width="40px"></a>
+
+    </div>
+        <div id="intro">
+            <div id="about">
+                <h3>Hi, my name is</h3>
+                <h1>Ryan Smith</h1>
+                <h3>I make websites</h3>
+                <p>Keep scrolling to learn what I can do for you.</p>
+            </div>
+        </div>
+        <div id="myWork">
+            <a href="">
+                <img src="{% static 'images/lamplightIcon.png'%}" alt="" width="50%">
+                <h5>_</h5>
+                <h5>Lamplight Photography</h5>
+                <h5>_</h5>
+                <p>Photography portfolio and online storefront</p>
+            </a>
+
+            <a href="https://www.devshark.dev/">
+                <img src="{% static 'images/devSharkLogo2.png'%}" alt="" width="50%">
+                <h5>_</h5>
+                <h5>Devshark</h5>
+                <h5>_</h5>
+                <p>Freelance developer company website</p>
+            </a>
+            
+            <a href="https://scooterplub-799cfae54993.herokuapp.com/">
+                <img src="{% static 'images/plumbingLogo.png'%}" alt="" width="50%">
+                <h5>_</h5>
+                <h5>Example Project</h5>
+                <h5>_</h5>
+                <p>Example website to show clients</p>
+            </a>
+            </div>
+            
+        <div id="contact">
+
+            <div id="form">
+                    {% if submitted %}
+                        <p>Your message has been sent. <br>
+                            I'll get back to you as soon as we can
+                        </p>
+                    {% else %}
+                        <form action="" method="post" novalidate>
+                            {{ form.as_p }}
+                            <input type="submit" value="Submit" id="submitButton">
+                            {% csrf_token %}
+                        </form>
+                    {% endif %}
+                </div>
+        </div>
+
+        <script src="{% static 'js/javascript.js' %}"></script>
+</body>
+</html>

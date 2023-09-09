@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+}
+
+h3{
+    font-family: Raleway;
+    font-size: 250%;
+    font-weight: 100;
+    color: whitesmoke;
+    text-shadow: #00000091 2px 2px;
+}
+
+h1{
+    font-family: Raleway;
+    font-size: 700%;
+    font-weight: 100;
+    color: whitesmoke;
+    text-shadow: #00000091 3px 3px;
+}
+
+h5{
+    font-family: Raleway;
+    font-size: 200%;
+    font-weight: 100;
+    color: whitesmoke;
+    text-shadow: #00000091 2px 2px;
+}
+
+p{
+    font-family: Raleway;
+    font-size: 125%;
+    font-weight: 100;
+    color: whitesmoke;
+    text-shadow: #00000091 2px 2px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header{
+    width: 100%;
+    padding-left: 40px;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+#navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+    padding: 20px;
+    background-color: yellow;
+    transform: skewX(-20deg);
+}
+
+#intro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/static/images/OBX-7.jpg');
+    background-size: 100%;
+    scroll-snap-align: center;
+}
+
+#about{
+    width: 50%;
+    height: 40%;
+    background-color: #fffa6a16;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-style: solid;
+    border-color: rgba(255, 251, 128, 0.49);
+    box-shadow: #00000069 2px 2px;
+}
+
+#myWork{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-image: url('/static/images/IMG_9620alt.jpg');
+    background-size: 100%;
+    scroll-snap-align: center;
+}
+
+#myWork a{
+    width: 25%;
+    height: 80%;
+    background-color: #fffa6a16;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-style: solid;
+    border-color: rgba(255, 251, 128, 0.49);
+    box-shadow: #00000069 2px 2px;
+}
+
+#contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: url('/static/images/IMG_9620alt.jpg');
+    background-size: 100%;
+    scroll-snap-align: start;
+}
+
+#form{
+    width: 35%;
+    height: 60%;
+    padding: 20px;
+    background-color: #fffa6a16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: solid;
+    border-color: rgba(255, 251, 128, 0.49);
+    box-shadow: #00000069 2px 2px;
+}
+
+.formInput{
+    width: 100%;
+    background-color: rgba(222, 207, 71, 0.717);
+    border-style: solid;
+    border-color: whitesmoke;
+    font-size: 75%;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+#submitButton{
+    width: 30%;
+    height: 8%;
+    float: right;
+    background-color: rgba(222, 207, 71, 0.717);
+    border-color: whitesmoke;
+    border-style: solid;
+    color: whitesmoke;
+}
+
+#header{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header img{
+    margin: 10px;
+}
